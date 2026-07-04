@@ -1,63 +1,43 @@
-# ForgeZero-CLI
+# forgezero-cli
 
-**ForgeZero-CLI** is a command-line toolkit designed to streamline developer workflows by tackling low-level build system complexities.
+Tools for people who still write assembly and C on purpose.
 
----
+We build small, fast, single-purpose developer tools. No frameworks,
+no bloat, no telemetry. If it doesn't need to allocate, it doesn't
+allocate.
 
-## About the Project
+Influences: suckless, TinyCC, the Unix philosophy.
 
-We develop software that helps engineers focus on what matters — writing code. Our primary focus is solving low-level infrastructure challenges, particularly those involving cumbersome build systems like **CMake** and **Make**, which often become bloated and difficult to maintain.
 
-If you're familiar with our **Go-based toolchain** — you already know what we're about. ForgeZero is a growing ecosystem of utilities aimed at simplifying systems programming, automation, and tooling.
+## Projects
 
----
+**ForgeZero (fz)** — zero-overhead build tool for assembly, C, C++,
+Objective-C, and Gloria. Wraps NASM, GAS, FASM, GCC, Clang, Zig, and LD
+behind one command-line interface.
 
-## Technology Stack
+    github.com/forgezero-cli/ForgeZero
 
-We build on a modern, systems-level technology stack:
+More projects will be listed here as they're released.
 
-- Go — primary language for CLI tools and infrastructure
 
-- C — system-level components and OS research
+## Principles
 
-- C++ — performance-critical modules and build system integrations
+* No configuration required to get started.
+* No intermediate files unless the user asks for them.
+* No dependency the user didn't explicitly opt into.
+* Every feature has a documented, testable exit code.
+* Performance claims ship with reproducible benchmarks.
 
-- NASM — bootloader development and low-level x86 assembly
 
-- Rust — memory-safe systems programming for future components
+## Contributing
 
-This diverse stack allows us to choose the right tool for each layer of the system — from high-level user interfaces down to the bare metal.
+Each project has its own CONTRIBUTING guide and coding standards under
+`docs/`. Read the project's documentation before opening a pull
+request. Patches are reviewed for correctness, performance impact, and
+adherence to the zero-allocation hot path where applicable.
 
-## Current Development
 
-In addition to the CLI tools, we're actively working on:
+## Contact
 
-- **Operating system research**
-- **FzBoot** — a custom bootloader designed for flexibility and performance
-
-These projects are currently developed in private channels. If you're interested in contributing or gaining early access, feel free to reach out at:  
-📧 **alexvostedev@proton.me**
-
----
-
-## Open Source Commitment
-
-All ForgeZero projects are released under strict open-source compliance:
-
-- **MIT** for permissive libraries and tools  
-- **GPLv3** for system-level components
-
-We believe in transparency, community-driven development, and reproducible builds.
-
----
-
-## Author & Lead Developer
-
-**alexvoste**  
-GitHub: [https://github.com/alexvoste](https://github.com/alexvoste)
-
----
-
-## License
-
-This project is licensed under the terms of the **MIT License** unless otherwise noted in specific submodules.
+* Issues: open them on the relevant project's repository.
+* Author / maintainer: [alexvoste](https://github.com/alexvoste)
