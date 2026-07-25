@@ -11,11 +11,11 @@ Influences: suckless, TinyCC, the Unix philosophy.
 
 ## Projects
 
-**ForgeZero (fz)** — zero-overhead build tool for assembly, C, C++,
+**Quench (qh)** — zero-overhead build tool for assembly, C, C++,
 Objective-C, and Gloria. Wraps NASM, GAS, FASM, GCC, Clang, Zig, and LD
 behind one command-line interface.
 
-    github.com/forgezero-cli/ForgeZero
+    github.com/forgezero-cli/Quench
 
 More projects will be listed here as they're released.
 
