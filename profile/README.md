@@ -15,7 +15,7 @@ Influences: suckless, TinyCC, the Unix philosophy.
 Objective-C, and Gloria. Wraps NASM, GAS, FASM, GCC, Clang, Zig, and LD
 behind one command-line interface.
 
-    github.com/forgezero-cli/Quench
+    github.com/qecko-labs/Quench
 
 More projects will be listed here as they're released.
 
